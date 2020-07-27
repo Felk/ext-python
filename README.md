@@ -7,7 +7,7 @@ The contents are as follows:
 
 To construct this collection of files from scratch, the following steps are required:
 - Install a 64-bit version of [Python 3](https://www.python.org/downloads/), and also download the respective [embeddable zip file](https://www.python.org/downloads/windows/) (requires Windows). Make sure to check "Download Debug Binaries" when installing.
-- Copy the contents of your Python installation's `libs/` directory into `libs/`.
+- Copy the contents of your Python installation's `libs/` directory into `libs/`, except tkinter (probably named `_tkinter.lib`).
 - Copy the contents of your Python installation's `include/` directory into `include/`.
 - Copy the contents of the embeddable zip file into `embed/`. The `.exe` files may be removed.
 - For each `.dll` file in `embed/`, also copy over the respective `*_d.dll` file from your Python installation's directory (or the `DLLs` subdirectory), if it exists. For me those were `python3_d.dll`, `python36_d.dll` and `DLLs/sqlite3_d.dll`.
